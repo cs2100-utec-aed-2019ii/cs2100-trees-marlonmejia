@@ -1,17 +1,16 @@
 
 #include <iostream>
 
-template<typename T>
-class Node{
+template <typename T>
+class Node {
 public:
-    Node<T>* left;
-    Node<T>* right;
-    Node(T key){
-        this->key=key;
-        this->left=nullptr;
-        this->right=nullptr;
+    T key;
+    Node<T> *left, *right;
+
+    Node(T key = NULL){
+        this->key = key;
+        this->left = this->right = nullptr;
     }
-    ~Node()
+    ~Node(){}
+
 };
-
-
